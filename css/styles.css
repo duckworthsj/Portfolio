@@ -1,0 +1,539 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: white;
+    max-width: 100%;
+}
+
+h3 {
+    color: #2a1b3d;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2f2fa2;
+    color: #f64c72;
+}
+
+.navbar-brand {
+    height: 100%;
+    font-family: 'Notable', sans-serif;
+    color: #f64c72;
+    padding: 0px;
+    margin: 0px;
+    animation-name: easeInButton;
+    animation-duration: 5s;
+}
+
+.navbar-toggler {
+    padding: 0rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    animation-name: easeIn;
+    animation-duration: 1s;
+}
+
+.nav-item {
+    padding: 0rem;
+}
+
+/*Jumbotron header */
+.jumbotron {
+    background-color: #2f2fa2;
+    color: #f64c72;
+    height: 100vh;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 0px;
+} 
+
+.jumbo-container {
+    text-align: center;
+}
+
+.jumbo-header {
+    animation-name: easeIn;
+    animation-duration: 1s;
+}
+
+.lead {
+    color: white;
+    animation-name: easeInButton;
+    animation-duration: 2s;
+}
+
+.btn-contact,
+.btn-projects,
+.btn-about,
+.btn-skills {
+    border-color: #f64c72;
+    color: white;
+    animation-name: easeInButton;
+    animation-duration: 3s;
+}
+
+.btn-skills {
+    animation-name: easeInButton;
+    animation-duration: 3.5s;
+}
+
+.btn-projects {
+    animation-name: easeInButton;
+    animation-duration: 4s;
+}
+
+.btn-contact {
+    animation-name: easeInButton;
+    animation-duration: 4.5s;
+}
+
+.background-text {
+    display: flex;
+    opacity: .3;
+    transform: rotate(-30deg);
+    font-size: 100px;
+}
+
+/* Who I Am Section */
+.about-container {
+    background-color: #f64c72;
+    height: 100%;
+    font-family: 'Amatic SC', cursive;
+    padding: 1.5rem;
+}
+
+.about-header {
+    color: #2f2fa2;
+}
+
+.about-text {
+    color: white;
+    font-size: 20px;
+}
+
+/* What I Can Do Section */
+.skills-container {
+    background-color: #2f2fa2;
+    height: 100%;
+    font-family: 'Amatic SC', cursive;
+    padding: 1.5rem;
+}
+
+.skills-header {
+    color: #f64c72;
+}
+
+.skills-text {
+    color: white;
+    font-size: 20px;
+}
+
+.skills-list {
+    color: white;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #f64c72;
+}
+
+.check-button {
+    vertical-align: middle;
+    justify-content: center;
+}
+
+/* Projects Section */
+.projects-container {
+    display: grid;
+    background-color: grey;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "proj3 proj5"
+        "proj6 proj7"
+        "proj8 proj2";
+}
+
+.project-images {
+    width: 50vw;
+    height: 33.3vh;
+    opacity: 0.5;
+}
+
+.project-images:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.project3-images {
+    grid-area: proj3;
+}
+
+.project5-images {
+    grid-area: proj5;
+}
+
+.project6-images {
+    grid-area: proj6;
+}
+
+.project7-images {
+    grid-area: proj7;
+}
+
+.project8-images {
+    grid-area: proj8;
+}
+
+.project2-images {
+    grid-area: proj2;
+}
+
+/* Contact Section */
+.contact-container {
+    background-color: #2f2fa2;
+    height: 100%;
+    font-family: 'Amatic SC', cursive;
+    padding: 1.5rem;
+}
+
+.contact-header {
+    color: #f64c72;
+}
+
+.contact-text {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-box {
+    border: 1px #f64c72  solid;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.contact-text {
+    margin: 0px;
+}
+
+.btn-send {
+    border-color: #f64c72;
+    color: white;
+    border: 1px solid #f64c72;
+
+}
+
+.form-group {
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 10px;
+}
+
+.form-control {
+    border: 1px #f64c72  solid;
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px #f64c72  solid;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.social-svg {
+    text-align: center;
+    height: 50px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#hiddenMessage {
+    display: none;
+    font-size: 40px;
+    animation-name: easeInOut;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.btn-message {
+    border-color: #f64c72;
+    color: white;
+    border: 1px solid #f64c72;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .jumbo-header {
+        font-size: 6.5rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+
+    /* Who I Am Section */
+    .about-container {
+        padding: 105px;
+    }
+
+    .about-header {
+        font-size: 34px;
+    }
+
+    .about-text {
+        font-size: 30px;
+    }
+
+    /* What I Can Do Section */
+    .skills-container {
+        padding: 2.5rem;
+    }
+
+    .skills-header {
+        font-size: 34px;
+    }
+    
+    .skills-text {
+        font-size: 30px;
+    }
+    
+    .skills-list {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 30px;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "proj3 proj5 proj6"
+            "proj7 proj8 proj2";
+    }
+
+    .project-images {
+        width: 33.3vw;
+        height: 50vh;
+    }
+
+    .project3-images {
+        grid-area: proj3;
+        
+    }
+
+    .project5-images {
+        grid-area: proj5;
+    }
+
+    .project6-images {
+        grid-area: proj6;
+    }
+
+    .project7-images {
+        grid-area: proj7;
+    }
+
+    .project8-images {
+        grid-area: proj8;
+    }
+
+    .project2-images {
+        grid-area: proj2;
+    }
+    
+    /* Contact Section */
+    .contact-container {
+        width: 100vw;
+    }
+
+    .contact-header {
+        font-size: 34px;
+    }
+
+    .form-control {
+        font-size: 20px;
+    }
+
+    .contact-text {
+        font-size: 30px;
+    }
+
+    .contact-box {
+        padding-top: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .send-button {
+        font-size: 26px;
+    }
+
+    .social-box {
+        height: 74px;
+    }
+
+    .social-icon {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .social-svg {
+        text-align: center;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-top: 14px;
+        padding-left: .5rem;
+    }
+
+.navbar-brand {
+    border-right: 1px #f64c72 solid;
+    padding-right: 10px;
+    }
+
+    .contact-container {
+    width: 100vw;
+    height: 100%;
+    }
+}
+
+
+@keyframes easeIn {
+    0%   {
+        opacity: 0;
+    }
+    10%  {
+        opacity: .1;
+    }
+    20%  {
+        opacity: .2;
+    }
+    30%  {
+        opacity: .3;
+    }
+    40%  {
+        opacity: .4;
+    }
+    50%  {
+        opacity: .5;
+    }
+    60%  {
+        opacity: .6;
+    }
+    70%  {
+        opacity: .7;
+    }
+    80%  {
+        opacity: .8;
+    }
+    90%  {
+        opacity: .9;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+@keyframes easeInButton {
+    0%   {
+        opacity: 0;
+    }
+    10%  {
+        opacity: 0;
+    }
+    20%  {
+        opacity: 0;
+    }
+    30%  {
+        opacity: 0;
+    }
+    40%  {
+        opacity: 0;
+    }
+    50%  {
+        opacity: 0;
+    }
+    60%  {
+        opacity: 0;
+    }
+    70%  {
+        opacity: 0;
+    }
+    80%  {
+        opacity: 0;
+    }
+    90%  {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes easeInOut {
+    0%   {
+        opacity: 0;
+    }
+    10%  {
+        opacity: .2;
+    }
+    20%  {
+        opacity: .4;
+    }
+    30%  {
+        opacity: .6;
+    }
+    40%  {
+        opacity: .8;
+    }
+    50%  {
+        opacity: 1;
+    }
+    60%  {
+        opacity: .8;
+    }
+    70%  {
+        opacity: .6;
+    }
+    80%  {
+        opacity: .4;
+    }
+    90%  {
+        opacity: .2;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
